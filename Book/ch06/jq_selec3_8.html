@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script>
+        $(function(){
+            
+            let topNum = $('h1').offset().top;
+            $(window).scrollTop(topNum);
+
+            let sct = $(window).scrollTop();
+            console.log(sct);
+        });
+    </script>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        body{line-height: 1;}
+        
+        #wrap {
+            height: 5000px;
+            padding-top: 2000px;
+        }
+       
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <h1>위치 메서드</h1>
+    </div>
+</body>
+</html>
